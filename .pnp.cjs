@@ -29,7 +29,10 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@11ty/eleventy", "npm:3.1.2"],\
-          ["blog", "workspace:."]\
+          ["@types/node", "npm:25.0.3"],\
+          ["blog", "workspace:."],\
+          ["sass", "npm:1.97.1"],\
+          ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -229,6 +232,150 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@parcel/watcher", [\
+      ["npm:2.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@parcel-watcher-npm-2.5.1-018e8f2cc2/node_modules/@parcel/watcher/",\
+        "packageDependencies": [\
+          ["@parcel/watcher", "npm:2.5.1"],\
+          ["@parcel/watcher-android-arm64", "npm:2.5.1"],\
+          ["@parcel/watcher-darwin-arm64", "npm:2.5.1"],\
+          ["@parcel/watcher-darwin-x64", "npm:2.5.1"],\
+          ["@parcel/watcher-freebsd-x64", "npm:2.5.1"],\
+          ["@parcel/watcher-linux-arm-glibc", "npm:2.5.1"],\
+          ["@parcel/watcher-linux-arm-musl", "npm:2.5.1"],\
+          ["@parcel/watcher-linux-arm64-glibc", "npm:2.5.1"],\
+          ["@parcel/watcher-linux-arm64-musl", "npm:2.5.1"],\
+          ["@parcel/watcher-linux-x64-glibc", "npm:2.5.1"],\
+          ["@parcel/watcher-linux-x64-musl", "npm:2.5.1"],\
+          ["@parcel/watcher-win32-arm64", "npm:2.5.1"],\
+          ["@parcel/watcher-win32-ia32", "npm:2.5.1"],\
+          ["@parcel/watcher-win32-x64", "npm:2.5.1"],\
+          ["detect-libc", "npm:1.0.3"],\
+          ["is-glob", "npm:4.0.3"],\
+          ["micromatch", "npm:4.0.8"],\
+          ["node-addon-api", "npm:7.1.1"],\
+          ["node-gyp", "npm:12.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@parcel/watcher-android-arm64", [\
+      ["npm:2.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@parcel-watcher-android-arm64-npm-2.5.1-5eeecb6e21/node_modules/@parcel/watcher-android-arm64/",\
+        "packageDependencies": [\
+          ["@parcel/watcher-android-arm64", "npm:2.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@parcel/watcher-darwin-arm64", [\
+      ["npm:2.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@parcel-watcher-darwin-arm64-npm-2.5.1-12be747bca/node_modules/@parcel/watcher-darwin-arm64/",\
+        "packageDependencies": [\
+          ["@parcel/watcher-darwin-arm64", "npm:2.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@parcel/watcher-darwin-x64", [\
+      ["npm:2.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@parcel-watcher-darwin-x64-npm-2.5.1-7a8bd09237/node_modules/@parcel/watcher-darwin-x64/",\
+        "packageDependencies": [\
+          ["@parcel/watcher-darwin-x64", "npm:2.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@parcel/watcher-freebsd-x64", [\
+      ["npm:2.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@parcel-watcher-freebsd-x64-npm-2.5.1-8d68995fbd/node_modules/@parcel/watcher-freebsd-x64/",\
+        "packageDependencies": [\
+          ["@parcel/watcher-freebsd-x64", "npm:2.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@parcel/watcher-linux-arm-glibc", [\
+      ["npm:2.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@parcel-watcher-linux-arm-glibc-npm-2.5.1-dbba115920/node_modules/@parcel/watcher-linux-arm-glibc/",\
+        "packageDependencies": [\
+          ["@parcel/watcher-linux-arm-glibc", "npm:2.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@parcel/watcher-linux-arm-musl", [\
+      ["npm:2.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@parcel-watcher-linux-arm-musl-npm-2.5.1-4c02382019/node_modules/@parcel/watcher-linux-arm-musl/",\
+        "packageDependencies": [\
+          ["@parcel/watcher-linux-arm-musl", "npm:2.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@parcel/watcher-linux-arm64-glibc", [\
+      ["npm:2.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@parcel-watcher-linux-arm64-glibc-npm-2.5.1-fcde7c8778/node_modules/@parcel/watcher-linux-arm64-glibc/",\
+        "packageDependencies": [\
+          ["@parcel/watcher-linux-arm64-glibc", "npm:2.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@parcel/watcher-linux-arm64-musl", [\
+      ["npm:2.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@parcel-watcher-linux-arm64-musl-npm-2.5.1-130ca76a6e/node_modules/@parcel/watcher-linux-arm64-musl/",\
+        "packageDependencies": [\
+          ["@parcel/watcher-linux-arm64-musl", "npm:2.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@parcel/watcher-linux-x64-glibc", [\
+      ["npm:2.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@parcel-watcher-linux-x64-glibc-npm-2.5.1-92a895ebe3/node_modules/@parcel/watcher-linux-x64-glibc/",\
+        "packageDependencies": [\
+          ["@parcel/watcher-linux-x64-glibc", "npm:2.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@parcel/watcher-linux-x64-musl", [\
+      ["npm:2.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@parcel-watcher-linux-x64-musl-npm-2.5.1-1f030ca64b/node_modules/@parcel/watcher-linux-x64-musl/",\
+        "packageDependencies": [\
+          ["@parcel/watcher-linux-x64-musl", "npm:2.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@parcel/watcher-win32-arm64", [\
+      ["npm:2.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@parcel-watcher-win32-arm64-npm-2.5.1-2dfe3131ac/node_modules/@parcel/watcher-win32-arm64/",\
+        "packageDependencies": [\
+          ["@parcel/watcher-win32-arm64", "npm:2.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@parcel/watcher-win32-ia32", [\
+      ["npm:2.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@parcel-watcher-win32-ia32-npm-2.5.1-e70c7b871b/node_modules/@parcel/watcher-win32-ia32/",\
+        "packageDependencies": [\
+          ["@parcel/watcher-win32-ia32", "npm:2.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@parcel/watcher-win32-x64", [\
+      ["npm:2.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@parcel-watcher-win32-x64-npm-2.5.1-6e3012ad80/node_modules/@parcel/watcher-win32-x64/",\
+        "packageDependencies": [\
+          ["@parcel/watcher-win32-x64", "npm:2.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@sindresorhus/slugify", [\
       ["npm:2.2.1", {\
         "packageLocation": "../../.yarn/berry/cache/@sindresorhus-slugify-npm-2.2.1-d3d46bd278-10c0.zip/node_modules/@sindresorhus/slugify/",\
@@ -246,6 +393,16 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@sindresorhus/transliterate", "npm:1.6.0"],\
           ["escape-string-regexp", "npm:5.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/node", [\
+      ["npm:25.0.3", {\
+        "packageLocation": "../../.yarn/berry/cache/@types-node-npm-25.0.3-b5e8cb0cae-10c0.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:25.0.3"],\
+          ["undici-types", "npm:7.16.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -425,7 +582,10 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@11ty/eleventy", "npm:3.1.2"],\
-          ["blog", "workspace:."]\
+          ["@types/node", "npm:25.0.3"],\
+          ["blog", "workspace:."],\
+          ["sass", "npm:1.97.1"],\
+          ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -484,6 +644,14 @@ const RAW_RUNTIME_STATE =
           ["is-glob", "npm:4.0.3"],\
           ["normalize-path", "npm:3.0.0"],\
           ["readdirp", "npm:3.6.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:4.0.3", {\
+        "packageLocation": "../../.yarn/berry/cache/chokidar-npm-4.0.3-962354fbb4-10c0.zip/node_modules/chokidar/",\
+        "packageDependencies": [\
+          ["chokidar", "npm:4.0.3"],\
+          ["readdirp", "npm:4.1.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -580,6 +748,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/dependency-graph-npm-1.0.0-c6f20ca264-10c0.zip/node_modules/dependency-graph/",\
         "packageDependencies": [\
           ["dependency-graph", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["detect-libc", [\
+      ["npm:1.0.3", {\
+        "packageLocation": "../../.yarn/berry/cache/detect-libc-npm-1.0.3-c30ac344d4-10c0.zip/node_modules/detect-libc/",\
+        "packageDependencies": [\
+          ["detect-libc", "npm:1.0.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -994,6 +1171,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["immutable", [\
+      ["npm:5.1.4", {\
+        "packageLocation": "../../.yarn/berry/cache/immutable-npm-5.1.4-cddca3d05c-10c0.zip/node_modules/immutable/",\
+        "packageDependencies": [\
+          ["immutable", "npm:5.1.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["imurmurhash", [\
       ["npm:0.1.4", {\
         "packageLocation": "../../.yarn/berry/cache/imurmurhash-npm-0.1.4-610c5068a0-10c0.zip/node_modules/imurmurhash/",\
@@ -1274,6 +1460,17 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["micromatch", [\
+      ["npm:4.0.8", {\
+        "packageLocation": "../../.yarn/berry/cache/micromatch-npm-4.0.8-c9570e4aca-10c0.zip/node_modules/micromatch/",\
+        "packageDependencies": [\
+          ["braces", "npm:3.0.3"],\
+          ["micromatch", "npm:4.0.8"],\
+          ["picomatch", "npm:2.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["mime", [\
       ["npm:3.0.0", {\
         "packageLocation": "../../.yarn/berry/cache/mime-npm-3.0.0-8d911e4c06-10c0.zip/node_modules/mime/",\
@@ -1448,6 +1645,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/negotiator-npm-1.0.0-47d727e27e-10c0.zip/node_modules/negotiator/",\
         "packageDependencies": [\
           ["negotiator", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["node-addon-api", [\
+      ["npm:7.1.1", {\
+        "packageLocation": "./.yarn/unplugged/node-addon-api-npm-7.1.1-bfb302df19/node_modules/node-addon-api/",\
+        "packageDependencies": [\
+          ["node-addon-api", "npm:7.1.1"],\
+          ["node-gyp", "npm:12.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1722,6 +1929,13 @@ const RAW_RUNTIME_STATE =
           ["readdirp", "npm:3.6.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:4.1.2", {\
+        "packageLocation": "../../.yarn/berry/cache/readdirp-npm-4.1.2-3440472afe-10c0.zip/node_modules/readdirp/",\
+        "packageDependencies": [\
+          ["readdirp", "npm:4.1.2"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["retry", [\
@@ -1738,6 +1952,19 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/safer-buffer-npm-2.1.2-8d5c0b705e-10c0.zip/node_modules/safer-buffer/",\
         "packageDependencies": [\
           ["safer-buffer", "npm:2.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["sass", [\
+      ["npm:1.97.1", {\
+        "packageLocation": "../../.yarn/berry/cache/sass-npm-1.97.1-099d6c46b5-10c0.zip/node_modules/sass/",\
+        "packageDependencies": [\
+          ["@parcel/watcher", "npm:2.5.1"],\
+          ["chokidar", "npm:4.0.3"],\
+          ["immutable", "npm:5.1.4"],\
+          ["sass", "npm:1.97.1"],\
+          ["source-map-js", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1850,6 +2077,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["source-map-js", [\
+      ["npm:1.2.1", {\
+        "packageLocation": "../../.yarn/berry/cache/source-map-js-npm-1.2.1-b9a47d7e1a-10c0.zip/node_modules/source-map-js/",\
+        "packageDependencies": [\
+          ["source-map-js", "npm:1.2.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["sprintf-js", [\
       ["npm:1.0.3", {\
         "packageLocation": "../../.yarn/berry/cache/sprintf-js-npm-1.0.3-73f0a322fa-10c0.zip/node_modules/sprintf-js/",\
@@ -1939,11 +2175,29 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["typescript", [\
+      ["patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5", {\
+        "packageLocation": "../../.yarn/berry/cache/typescript-patch-6fda4d02cf-10c0.zip/node_modules/typescript/",\
+        "packageDependencies": [\
+          ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["uc.micro", [\
       ["npm:2.1.0", {\
         "packageLocation": "../../.yarn/berry/cache/uc.micro-npm-2.1.0-c45282c865-10c0.zip/node_modules/uc.micro/",\
         "packageDependencies": [\
           ["uc.micro", "npm:2.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["undici-types", [\
+      ["npm:7.16.0", {\
+        "packageLocation": "../../.yarn/berry/cache/undici-types-npm-7.16.0-0e23b08124-10c0.zip/node_modules/undici-types/",\
+        "packageDependencies": [\
+          ["undici-types", "npm:7.16.0"]\
         ],\
         "linkType": "HARD"\
       }]\
