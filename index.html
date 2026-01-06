@@ -10,7 +10,7 @@ description: A personal blog about growth, life, and becoming 1% better every da
     Welcome to my personal blog where I share my journey of becoming
     <strong>1% better every day</strong>.
   </p>
-  <a href="/blogs/" class="cta">Read the Blog &rarr;</a>
+  <a href="{{ '/blogs/' | url }}" class="cta">Read the Blog &rarr;</a>
 </section>
 
 <section class="recent-posts">
@@ -19,7 +19,7 @@ description: A personal blog about growth, life, and becoming 1% better every da
     {%- for post in collections.post reversed limit:3 -%}
     <li class="post-item">
       <article>
-        <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+        <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
         <time datetime="{{ post.date | date: '%Y-%m-%d' }}"
           >{{ post.date | date: "%B %d, %Y" }}</time
         >

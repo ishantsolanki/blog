@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }} | Ishant's Blog</title>
     <meta name="description" content="{{ description }}" />
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="{{ '/styles/main.css' | url }}" />
   </head>
   <body>
     <header class="site-header">
       <nav>
-        <a href="/" class="logo">Ishant's Blog</a>
+        <a href="{{ '/' | url }}" class="logo">Ishant's Blog</a>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/blogs/">Blog</a></li>
+          <li><a href="{{ '/' | url }}">Home</a></li>
+          <li><a href="{{ '/blogs/' | url }}">Blog</a></li>
         </ul>
       </nav>
     </header>

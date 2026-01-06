@@ -2,6 +2,9 @@ import path from "path";
 import * as sass from "sass";
 
 export default function (eleventyConfig: any) {
+  // Path prefix for GitHub Pages (repo name)
+  const pathPrefix = process.env.ELEVENTY_ENV === "production" ? "/blog/" : "/";
+
   eleventyConfig.addExtension("scss", {
     outputFileExtension: "css",
 
@@ -36,6 +39,14 @@ export default function (eleventyConfig: any) {
 
   eleventyConfig.addTemplateFormats("scss");
 
+  // URL filter to add path prefix
+  eleventyConfig.addFilter("url", (url: string) => {
+    if (url.startsWith("/")) {
+      return pathPrefix + url.slice(1);
+    }
+    return url;
+  });
+
   // Add date filter for templates
   eleventyConfig.addFilter("date", (dateObj: Date, format: string) => {
     if (format === "%Y-%m-%d") {
@@ -56,4 +67,8 @@ export default function (eleventyConfig: any) {
 
     return dateObj.toLocaleDateString();
   });
+
+  return {
+    pathPrefix: pathPrefix,
+  };
 }
