@@ -36,5 +36,24 @@ export default function (eleventyConfig: any) {
 
   eleventyConfig.addTemplateFormats("scss");
 
-  eleventyConfig.addPassthroughCopy("layout.css");
+  // Add date filter for templates
+  eleventyConfig.addFilter("date", (dateObj: Date, format: string) => {
+    if (format === "%Y-%m-%d") {
+      return dateObj.toISOString().split("T")[0];
+    }
+
+    if (format === "%B %d, %Y") {
+      return dateObj.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      });
+    }
+
+    if (format === "%Y") {
+      return dateObj.getFullYear().toString();
+    }
+
+    return dateObj.toLocaleDateString();
+  });
 }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }} | Ishant's Blog</title>
+    <meta name="description" content="{{ description }}" />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav>
+        <a href="/" class="logo">Ishant's Blog</a>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blogs/">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>{{ content }}</main>
+    <footer>
+      <p>
+        &copy; {{ page.date | date: "%Y" }} Ishant Solanki. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
