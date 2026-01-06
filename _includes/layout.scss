@@ -1,9 +1,11 @@
-// Variables
-$primary-color: #2563eb;
-$text-color: #1f2937;
-$text-muted: #6b7280;
-$bg-color: #ffffff;
-$border-color: #e5e7eb;
+// Variables - Dark Mode
+$primary-color: #60a5fa;
+$primary-hover: #93c5fd;
+$text-color: #e5e7eb;
+$text-muted: #9ca3af;
+$bg-color: #0f172a;
+$bg-surface: #1e293b;
+$border-color: #334155;
 $max-width: 720px;
 
 // Reset & Base
@@ -33,12 +35,14 @@ a {
   text-decoration: none;
 
   &:hover {
+    color: $primary-hover;
     text-decoration: underline;
   }
 }
 
 // Header
 .site-header {
+  background: $bg-surface;
   border-bottom: 1px solid $border-color;
   padding: 1rem 2rem;
 
@@ -57,6 +61,7 @@ a {
 
     &:hover {
       text-decoration: none;
+      color: $primary-color;
     }
   }
 
@@ -103,14 +108,15 @@ main {
   .cta {
     display: inline-block;
     background: $primary-color;
-    color: white;
+    color: $bg-color;
     padding: 0.75rem 1.5rem;
     border-radius: 6px;
-    font-weight: 500;
+    font-weight: 600;
 
     &:hover {
       text-decoration: none;
-      opacity: 0.9;
+      background: $primary-hover;
+      color: $bg-color;
     }
   }
 }
@@ -234,6 +240,7 @@ main {
 
 // Footer
 footer {
+  background: $bg-surface;
   border-top: 1px solid $border-color;
   padding: 2rem;
   text-align: center;
