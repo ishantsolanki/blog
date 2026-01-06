@@ -4,7 +4,9 @@
   "description": "My personal blog",
   "main": "index.html",
   "scripts": {
-    "start": "npx @11ty/eleventy --config=eleventy.config.ts --serve"
+    "start": "npx @11ty/eleventy --config=eleventy.config.ts --serve",
+    "build": "npx @11ty/eleventy --config=eleventy.config.ts",
+    "deploy": "rm -rf docs && cp -r _site docs"
   },
   "keywords": [
     "11ty",
